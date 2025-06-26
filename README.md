@@ -49,5 +49,5 @@ supabase_flutter: ^1.10.11
 3. flutter run
 
 ## Dummy Login
-Email    : admin@admin.com
-Password : admin123
+Email    : justin@gmail.com
+Password : 123456
