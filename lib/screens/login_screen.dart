@@ -67,8 +67,8 @@ class _LoginScreenState extends State<LoginScreen> {
               TextButton(
                 onPressed: () => setState(() => isLogin = !isLogin),
                 child: Text(isLogin
-                    ? 'Belum punya akun? Daftar'
-                    : 'Sudah punya akun? Login'),
+                    ? 'Sign Up'
+                    : 'Back to Login'),
               )
             ],
           ),
