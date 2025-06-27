@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> _checkStart() async {
-    await Future.delayed(const Duration(seconds: 2)); // animasi splash
+    await Future.delayed(const Duration(seconds: 2)); 
 
     final isFirst = await LocalStorageService.isFirstTime();
     final session = Supabase.instance.client.auth.currentSession;

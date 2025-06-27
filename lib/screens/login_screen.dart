@@ -33,14 +33,15 @@ class _LoginScreenState extends State<LoginScreen> {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Auth error: $e")));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Email atau Password anda belum terdaftar. Silahkan coba lagi")));
+     // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Auth error: $e")));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(isLogin ? 'Login' : 'Register')),
+      appBar: AppBar(title: Text(isLogin ? 'Login User' : 'Registrasi Akun')),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Form(

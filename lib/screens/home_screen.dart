@@ -45,16 +45,16 @@ class _HomeScreenState extends State<HomeScreen> {
       context: context,
       builder:
           (_) => AlertDialog(
-            title: const Text('Hapus To-Do'),
-            content: const Text('Apakah kamu yakin ingin menghapus to-do ini?'),
+            title: const Text('Delete To-Do'),
+            content: const Text('Apakah kamu yakin ingin menghapus?'),
             actions: [
               TextButton(
-                child: const Text('Batal'),
+                child: const Text('Cancel'),
                 onPressed: () => Navigator.pop(context),
               ),
               ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                child: const Text('Hapus'),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.red ,  foregroundColor: Colors.white, ),
+                child: const Text('Delete'),
                 onPressed: () async {
                   await supabase.from('todos').delete().eq('id', todoId);
                   if (mounted) {
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('To-Do $userEmail Hari Ini'),
+        title: Text('List To-Do $userEmail today'),
         actions: [
           IconButton(icon: const Icon(Icons.logout), onPressed: _logout),
         ],
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
           isLoading
               ? const Center(child: CircularProgressIndicator())
               : todos.isEmpty
-              ? const Center(child: Text("Belum ada tugas harian"))
+              ? const Center(child: Text("Belum ada tugas"))
               : ListView.builder(
                 itemCount: todos.length,
                 itemBuilder: (context, index) {

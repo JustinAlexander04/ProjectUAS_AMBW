@@ -35,7 +35,7 @@ class _AddTodoDialogState extends State<AddTodoDialog> {
       'user_id': user.id,
     });
 
-    if (mounted) Navigator.pop(context); // tutup dialog
+    if (mounted) Navigator.pop(context); 
   }
 
   Future<void> _pickDateTime() async {
@@ -99,11 +99,11 @@ class _AddTodoDialogState extends State<AddTodoDialog> {
       ),
       actions: [
         TextButton(
-          child: const Text('Batal'),
+          child: const Text('Cancel'),
           onPressed: () => Navigator.pop(context),
         ),
         ElevatedButton(
-          child: const Text('Simpan'),
+          child: const Text('Save'),
           onPressed: _submit,
         ),
       ],

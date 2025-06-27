@@ -26,7 +26,7 @@ class GetStartedScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               const Text(
-                'Aplikasi ini membantu kamu mencatat dan mengatur aktivitas harian dengan mudah. Tandai tugas yang sudah selesai, dan fokuslah pada prioritasmu hari ini!',
+                'Aplikasi ini membantu kamu mencatat dan mengatur aktivitas harianmu dengan mudah. Silahkan tandai tugas yang sudah selesai',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16),
               ),
