@@ -17,7 +17,7 @@ Aplikasi **Daily Planner** adalah aplikasi to-do list sederhana berbasis Flutter
 - 🔒 **Session Persistence**  
   Menyimpan status login dengan SharedPreferences agar user tetap login saat aplikasi dibuka ulang
 
-- 🚀 **Get Started Screen (One-time Intro)**  
+- 🚀 **Get Started Screen**  
   Menampilkan layar perkenalan saat aplikasi pertama kali di-install
 
 - 📱 **Navigasi dan UI yang rapi & fungsional**  
@@ -45,8 +45,7 @@ supabase_flutter: ^1.10.11
   intl: ^0.18.1
 
 1. flutter pub get
-2. hapus folder build (buat jaga jaga) / optional
-3. flutter run
+2. flutter run
 
 ## Dummy Login
 Email    : justin@gmail.com
