@@ -33,8 +33,8 @@ class _LoginScreenState extends State<LoginScreen> {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Email atau Password anda belum terdaftar. Silahkan coba lagi")));
-     // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Auth error: $e")));
+      //ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Email atau Password anda belum terdaftar. Silahkan coba lagi")));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Auth error: $e")));
     }
   }
 
